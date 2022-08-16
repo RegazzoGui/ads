@@ -44,6 +44,8 @@ def op_acompanhamento(num):
         case 4:
             return 3
 
+
+#Entrada de dados
 while True:
     print('Bem-vindo ao Sistema de Venda de Feijoadas do Seu Zé!')
     x = float_teste(volume_feijoada())
@@ -84,5 +86,5 @@ while True:
         else:
             print('Apenas números os valores informados!!!')
 
-    print(f'O Valor a ser pago é R${val:.2f} (R$ {x} volume + R$ {op_feijoada(lt):.2f} opção + acompanhamento R$ {sum(op_list_calc):.2f})')
+    print(f'O Valor a ser pago é R${val:.2f} (volume = {x} + R$ {op_feijoada(lt):.2f} opção + acompanhamento R$ {sum(op_list_calc):.2f})')
 
