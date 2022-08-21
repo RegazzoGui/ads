@@ -1,6 +1,6 @@
 """
 IMPORTANTE - Python versão 3.10
-Exercício 1 - Sistema para PedShop
+Exercício 1
 """
 #Funções
     #Aliquota de desconto
@@ -24,8 +24,8 @@ def is_number(num):
     except ValueError:
         return False
 
-#Inicio
-msg = 'Autopeças Novo mundo'
+#Inicio Main
+msg = 'Autopeças - Aluisio G S Regazzo'
 print('==' * 20)
 print(msg.center(40))
 print('==' * 20)
@@ -51,3 +51,5 @@ total_desc = total - (total * aliq)
 
 print(f'O valor sem desconto foi: R${total:.2f}')
 print(f'O valor com desconto foi: R${total_desc:.2f}  (desconto de {(aliq * 100):.1f}%)')
+
+#Fim da Main
