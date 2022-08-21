@@ -52,12 +52,12 @@ def consultar_produtos():
                         print()
 
                         for k, v in enumerate(lista_produtos):
-                            print(f'Cod --> {v.get("cod")}: Prod = {v.get("prod")}, Fab = {v.get("fab")}, Preço = {v.get("prec")}\n')
+                            print(f'Cod --> {v.get("cod")}: Prod = {v.get("prod")}, Fab = {v.get("fab")}, Preço = R${v.get("prec")}\n')
                     elif x == 2:
                         c = int(input('Informe o código do produto: '))
                         for k, v in enumerate(lista_produtos):
                             if k + 1 == c:
-                                print(f'Cod --> {v.get("cod")}: Prod = {v.get("prod")}, Fab = {v.get("fab")}, Preço = {v.get("prec")}\n')
+                                print(f'Cod --> {v.get("cod")}: Prod = {v.get("prod")}, Fab = {v.get("fab")}, Preço = R${v.get("prec")}\n')
                     elif x == 3:
                         local = 0
                         produto = input('Informe o nome do Fabricante: ')
@@ -107,7 +107,7 @@ def remover_produtos():
 
 #Inicio MAIN
 cod_prod = 0
-print("Bem-vindo ao Programa Controle de Produtos")
+print("Bem-vindo ao Programa Controle de Produtos - Aluisio G S Regazzo")
 while True:
     try:
         op = int(input("Digite a opção desejada:\n"
@@ -134,6 +134,5 @@ while True:
     except:
         print('São permitidos apenas números inteiros!')
         print()
-
 
 #Fim MAIN
